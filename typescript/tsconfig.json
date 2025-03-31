@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // ES 버전 선택(ESNext : JS 최신버전)
+    "module": "ESNext", // 모듈시스템 선택 (CommonJS, ESNext)
+    "outDir": "dist", // 컴파일 후 생성된 JS 파일들이 저장되는 곳
+    "strict": true, // 타입 검사(true : 엄격한 타입 검사, false : 점진적 타입 검사)
+    "moduleDetection": "force", // 컴파일 시 전역 모듈 -> 독립된 모듈 변환
+    "skipLibCheck": true // 타입 정의 파일(.d.ts)의 타입 검사 생략
+  },
+  "include": ["src"] // src 하위의 모든 파일 컴파일
+}
