@@ -17,6 +17,12 @@ services:
     environment:
       - SPRING_APPLICATION_NAME=spring2
 
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+
   nginx:
     image: nginx:latest
     container_name: nginx

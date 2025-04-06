@@ -31,6 +31,7 @@ public class OAuth2SuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
         + URLEncoder.encode(userInfo.email(), StandardCharsets.UTF_8)
         + "&name=" + URLEncoder.encode(userInfo.name(), StandardCharsets.UTF_8);
 
+    req.getSession().invalidate();
     res.sendRedirect(redirectUrl);
   }
 }
